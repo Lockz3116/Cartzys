@@ -222,7 +222,7 @@ export default function CartzysPage() {
 
       {/* Hero */}
       <header ref={headerRef} className="text-center py-14 px-4 max-w-2xl mx-auto">
-        <img src="/images/logo.gif" /> className="mx-auto w-24 mb-6 opacity-90" />
+        <img src="/images/logo.png" className="mx-auto w-24 mb-6 opacity-90" />
         <h1 className="text-4xl sm:text-5xl font-extrabold uppercase tracking-tight leading-tight">
           Partner With The <span className="text-purple-500">Suppliers</span> That Powered My Growth
         </h1>
