@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----------------------
+   🌐 Global Web Fonts
+------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;500;700&display=swap');
+
+body {
+  @apply bg-black text-white;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* -----------------------
+   🎞️ Marquee Animation
+------------------------ */
+@keyframes marquee-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-loop {
+  animation: marquee-loop 30s linear infinite;
+}
+
+/* -----------------------
+   ✨ Custom Utilities
+------------------------ */
+.shadow-lux {
+  box-shadow: 0 0 30px rgba(180, 100, 255, 0.15);
+}
+
+.card-hover-glow:hover {
+  box-shadow: 0 0 35px rgba(180, 100, 255, 0.25);
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+.fancy-divider {
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+  height: 1px;
+  margin: 2rem 0;
+}
